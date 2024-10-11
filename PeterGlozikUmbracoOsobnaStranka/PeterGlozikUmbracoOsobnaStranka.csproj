@@ -2525,6 +2525,7 @@
     <Content Include="Styles\images\ajax-loader.gif" />
     <Content Include="Styles\images\arrow-left.png" />
     <Content Include="Styles\images\arrow-right.png" />
+    <Content Include="Styles\images\England.png" />
     <Content Include="Styles\images\eshop.png" />
     <Content Include="Styles\images\foto1.jpg" />
     <Content Include="Styles\images\foto10.jpg" />
@@ -2612,6 +2613,7 @@
     <Content Include="Styles\images\Priroda\IMG_20220807_151642.jpg" />
     <Content Include="Styles\images\Priroda\IMG_20220807_151650.jpg" />
     <Content Include="Styles\images\Priroda\IMG_20220827_181752.jpg" />
+    <Content Include="Styles\images\Slovak.png" />
     <Content Include="Styles\images\taskmanager.png" />
     <Content Include="Umbraco\assets\css\canvasdesigner.css" />
     <Content Include="Umbraco\assets\css\installer.css" />

@@ -9,12 +9,20 @@
     $('img.lazy').lazy();
 
     // Toggle navigation icon
-    $('#menuIcon').click(function () {
-        $('#menuIcon').toggleClass('fa-bars fa-times');
+    $('#navbar').on('show.bs.collapse', function () {
+        $('#menuIcon').removeClass('fa-bars').addClass('fa-times');
     });
 
-    $('#menuIconProtect').click(function () {
-        $('#menuIconProtect').toggleClass('fa-bars fa-times');
+    $('#navbar').on('hide.bs.collapse', function () {
+        $('#menuIcon').removeClass('fa-times').addClass('fa-bars');
+    });
+
+    $('#navbar-protected').on('show.bs.collapse', function () {
+        $('#menuIconProtect').removeClass('fa-bars').addClass('fa-times');
+    });
+
+    $('#navbar-protected').on('hide.bs.collapse', function () {
+        $('#menuIconProtect').removeClass('fa-times').addClass('fa-bars');
     });
 
 

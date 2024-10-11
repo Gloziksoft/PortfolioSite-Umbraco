@@ -16,7 +16,7 @@
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-    padding: 5px 10px;
+    padding: 5px 8px;
     margin-top: 10px;
     text-shadow: none;
     font-size: 14px;
@@ -27,7 +27,7 @@
     background-color: #fffa004c;
     color: #fff;
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 5px 8px;
     border-radius: 5px;
     line-height: 1.5;
     margin-top: 10px;
@@ -682,4 +682,10 @@ label {
     border-radius: 50px;
     cursor: pointer;
     display: none;
+}
+
+li a.sk img,
+li a.en img {
+    width: 20px;
+    height: auto;
 }
