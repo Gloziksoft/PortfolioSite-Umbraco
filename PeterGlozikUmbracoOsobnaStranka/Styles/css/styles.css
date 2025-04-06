@@ -1,6 +1,6 @@
 ﻿.navbar-default {
     border: none;
-    background: #276271;
+    background: linear-gradient(to right, #599b5b, #1b6754);
 }
 .navbar-default .navbar-nav .navbar-divider {
     height: 36px;
@@ -59,7 +59,7 @@
 }
 
 .navbar-toggle {
-  background-color: transparent;
+  background-color: #fff;
   border: 1px solid #ddd;
   padding: 2px 12px;
   font-size: 23px;
@@ -76,7 +76,7 @@
     display: block;
     max-width: 100%;
     height: auto;
-    border-radius: 60%;
+    border-radius: 5%;
 }
 
 .img-peter1 img {
@@ -86,18 +86,24 @@
 
 .page-body {
     padding-top: 150px;
-    background: url('../images/foto6.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-bottom: 120px;
-    margin-bottom: -20px;
+    flex: 1; 
+    min-height: calc(100vh - 250px);
 }
 
 .contact-items .glyphicon {
     padding-right: 10px;
     color: #766969;
 }
+
+.text_contact {
+    background: rgba(188, 188, 188, .84);
+    margin: 5% auto;
+    padding: 2vw;
+    border-radius: 10px;
+    max-width: 80%;
+    display: flex;
+}
+
 
 .tlacitko {
     padding: 10px;
@@ -302,9 +308,9 @@ label {
 .footer {
     text-align: center;
     padding: 25px 10px;
-    background-color: #276271;
+    background: linear-gradient(to top, #599b5b, #1b6754);
     color: white;
-    margin-top: 20px;
+    margin-top: 75px;
 }
 .footer .copyright a {
     text-align: center;
@@ -351,9 +357,6 @@ label {
     margin-top: -20px;
 }
 
-.osobnastranka-form {
-    width: 365px;
-}
 .form-section {
     margin-top: 20px;
 }
@@ -545,7 +548,6 @@ label {
 
 /* Form Styles */
 .osobnastranka-form {
-    background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -600,37 +602,6 @@ label {
 .img-thumbnail:hover {
     transform: scale(1.05);
 }
-
-/* Štýly pre chatbota */
-#chatbot {
-    width: 225px;
-    height: 245px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #4b459d;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    border-radius: 10px;
-}
-
-#chatlog {
-    height: 250px;
-    overflow-y: auto;
-    padding: 5px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    flex-grow: 1;
-    background-color: #ffffff;
-}
-
-    #chatlog div {
-        margin: 5px 0;
-    }
 
 #userInput {
     width: calc(100% - 70px);
@@ -688,4 +659,192 @@ li a.sk img,
 li a.en img {
     width: 20px;
     height: auto;
+}
+
+
+
+/* CV */
+.cv-title {
+    text-align: center; /* Umiestnenie textu na stred (voliteľné) */
+    margin: 20px 0; /* Vonkajšie okraje pre h2 (voliteľné) */
+}
+
+.cv-link {
+    color: #FF4500;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #FF4500;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cv-link:hover {
+    background-color: #FF6347;
+    color: white;
+}
+
+
+
+/* Úvod */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #00000082;
+    border-radius: 18px;
+}
+
+.text-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.dynamic-text {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 5px;
+    background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+}
+
+.main-title {
+    font-family: -webkit-body;
+    color: white;
+    font-size: 50px;
+}
+
+.subtitle {
+    font-family: ui-monospace;
+    color: white;
+    font-size: 40px;
+}
+
+.profile-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin: 5px;
+    }
+
+    .profile-image-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.video-div {
+    display: none;
+    padding-top: 0;
+    margin-bottom: 20px;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+    .video-div p.normal {
+        margin-bottom: 0;
+    }
+
+.margin-top-minus-20 {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.universal_background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+/* Personaly*/
+
+.body-personal {
+    color: #fff;
+    background: #000000b5;
+    border-radius: 20px;
+    padding: 18px;
+    letter-spacing: 1px;
+}
+
+/* Eduction_personaly*/
+
+.education {
+    background: #ddddddb8;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.text_project_middle {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.main_blog {
+    background: #ddddddbd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px;
+    font-size: 16px;
+}
+
+.main_blog_name {
+    background: #dddddded;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+    margin: 15px auto;
+}
+
+.education-personally {
+    width: 100%; /* Video zaplní celú šírku rodičovského prvku */
+    height: auto; /* Automaticky sa prispôsobí pomeru strán */
+    max-height: 80vh; /* Maximálna výška videa, aby nebolo príliš veľké */
+    object-fit: cover; /* Oreže video tak, aby zaplnilo celý priestor */
+    display: block; /* Odstráni prázdny priestor okolo videa */
+}
+
+.glyphicon-phone-alt:before {
+    content: "";
+    color: green;
+}
+.glyphicon-envelope:before {
+    content: "✉";
+    color: green;
 }

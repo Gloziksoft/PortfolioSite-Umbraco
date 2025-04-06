@@ -132,12 +132,6 @@
     ]
   },
   {
-    "outputFileName": "Styles/css/content.min.css",
-    "inputFiles": [
-      "Styles/css/content.css"
-    ]
-  },
-  {
     "outputFileName": "Styles/css/jquery.auto-complete.min.css",
     "inputFiles": [
       "Styles/css/jquery.auto-complete.css"
@@ -207,6 +201,12 @@
     "outputFileName": "Scripts/jquery.unobtrusive-ajax.min.min.js",
     "inputFiles": [
       "Scripts/jquery.unobtrusive-ajax.min.js"
+    ]
+  },
+  {
+    "outputFileName": "Styles/css/content.min.css",
+    "inputFiles": [
+      "Styles/css/content.css"
     ]
   }
 ]

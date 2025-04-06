@@ -390,6 +390,9 @@
       <DependentUpon>jquery.ui.datepicker-sk.js</DependentUpon>
     </Content>
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.min.js">
+      <DependentUpon>jquery.unobtrusive-ajax.min.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery.uploadfile.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.uploadfile.min.js">
@@ -2615,6 +2618,12 @@
     <Content Include="Styles\images\Priroda\IMG_20220827_181752.jpg" />
     <Content Include="Styles\images\Slovak.png" />
     <Content Include="Styles\images\taskmanager.png" />
+    <Content Include="Styles\video\Blog_img.mp4" />
+    <Content Include="Styles\video\contact.mp4" />
+    <Content Include="Styles\video\Eduction.mp4" />
+    <Content Include="Styles\video\portfolio.jpg" />
+    <Content Include="Styles\video\pozadie-osobne_udaje.mp4" />
+    <Content Include="Styles\video\pozadie_uvod.mp4" />
     <Content Include="Umbraco\assets\css\canvasdesigner.css" />
     <Content Include="Umbraco\assets\css\installer.css" />
     <Content Include="Umbraco\assets\css\nonodes.style.min.css" />
@@ -5306,6 +5315,9 @@
     <Content Include="Views\MacroPartials\blogCountriesUpdate.cshtml" />
     <Content Include="Views\Partials\Layout\_ModelError.cshtml" />
     <Content Include="Views\MacroPartials\enBlog.cshtml" />
+    <Content Include="Views\MacroPartials\uvod.cshtml" />
+    <Content Include="Views\MacroPartials\backgroundPersonaly.cshtml" />
+    <Content Include="Views\MacroPartials\home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5315,7 +5327,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
-    <Folder Include="Styles\video\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

@@ -1,7 +1,6 @@
 ﻿@model PeterGlozikUmbracoOsobnaStranka.lib.Models.OsobnaStrankaContactModel
 @using PeterGlozikUmbracoOsobnaStranka.lib.Util
 
-
 @if (TempData["success"] != null)
 {
     <p class="big">@CurrentLang.GetText("Views/ContactForm", "Ďakujeme za správu.")</p>
@@ -54,5 +53,8 @@ else
                 <input type="submit" id="submitButton" class="hidden" />
             </div>
         </div>
+        <video class="education-personally" autoplay muted loop playsinline>
+            <source src="~/Styles/video/contact.mp4" type="video/mp4">
+        </video>
     }
 }
