@@ -125,17 +125,17 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\dufeksoft.lib\dufeksoft.lib\dufeksoft.lib.csproj">
-      <Project>{3b16a948-37a3-4301-b11b-bfde6e95fb10}</Project>
-      <Name>dufeksoft.lib</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Repositories\_dbOsobnaStranka.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dufeksoft.lib\dufeksoft.lib.csproj">
+      <Project>{3b16a948-37a3-4301-b11b-bfde6e95fb10}</Project>
+      <Name>dufeksoft.lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
